@@ -9,10 +9,12 @@ This is a simple front-end project created as a practice exercise. The project i
 The project structure is straightforward, containing HTML and CSS files. The HTML file (`index.html`) includes the structure of the landing page, and the CSS file (`style.css`) provides the styling and animations. 
 
     |-- dental-care-landing-page
-        |-- index.html
-        |-- style.css
         |-- images
             |-- (image files)
+        |-- index.html
+        |-- style.css
+        |-- LICENSE
+        |-- README.MD
 
         
 

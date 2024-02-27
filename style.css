@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+}
+html, body{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+}
+::selection {
+    background-color: yellowgreen; 
+    color: white;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav h3{
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 4px 15px;
+    border-radius: 50px;
+}
+#nav-part1 #menuLogo{
+    font-size: 15px;
+    padding: 5px 7px !important;
+    
+}
+#nav h1{
+    font-size: 22px;
+    font-weight: 500;
+}
+button{
+    padding: 5px 15px;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    font-size: 17px;
+    background-color: white;
+}
+button:hover {
+    background-color: yellowgreen;
+    color: white;
+    border: 1px solid yellowgreen !important; ;
+}
+#nav #btn2{
+    background-color: yellowgreen;
+    color: white;
+    border: 2px solid yellowgreen !important;
+    font-weight: 600;
+    font-style: normal;
+}
+#nav #btn2:hover {
+    background-color: white !important;
+    color: yellowgreen !important;
+    border: 2px solid yellowgreen !important;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@keyframes revealText {
+    0% {
+        opacity: 0;
+        top: 50%;
+    }
+    10% {
+        opacity: 100%;
+        top: 50%;
+    }
+    80% {
+        opacity: 100%;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: -50%;
+    }
+}
+
+#middle #txt1 {
+    font-size: 150px;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    animation: revealText 17s forwards;
+}
+
+@keyframes revealText2 {
+    0% {
+        opacity: 0;
+        top: 200%;
+    }
+    100% {
+        opacity: 100%;
+        top: 35%;
+    }
+}
+
+#middle #txt2 {
+    font-size: 150px; 
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    animation: revealText2 2s forwards 13.5s;
+    opacity: 0;
+}
+
+
+img {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes revealImg1 {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        top: 50%;
+    }
+    10% {
+        transform: translate(-50%, -50%) scale(1);
+        top: 50%;
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        top: 50%;
+    }
+    50% {
+        top: -100%;
+    }
+}
+@keyframes revealImg2 {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(350deg);
+    }
+}
+@keyframes revealImg3 {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(340deg);
+    }
+}
+@keyframes revealImg4 {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(330deg);
+    }
+}
+@keyframes picAnimationMove {
+    0% {
+        top: 50%;
+    }
+    100% {
+        top: -50%;
+    }
+}
+@keyframes picAnimationRotate2 {
+    100% {
+        transform: translate(-50%, -50%) rotate(340deg) scale(1);
+    }
+}
+@keyframes picAnimationRotate1 {
+    100% {
+        transform: translate(-50%, -50%) rotate(350deg) scale(1);
+    }
+}
+@keyframes picAnimationRotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    }
+}
+
+#i1 {
+    transform: translate(-50%, -50%) scale(0);
+    animation: revealImg4 4s forwards 2s, picAnimationRotate2 2s forwards 6s, picAnimationRotate1 2s forwards 8s, picAnimationRotate 2s forwards 10s, picAnimationMove 2s forwards 12s;
+}
+#i2 {
+    transform: translate(-50%, -50%) scale(0);
+    animation: revealImg3 4s forwards 2s, picAnimationRotate1 2s forwards 6s, picAnimationRotate 2s forwards 8s, picAnimationMove 2s forwards 10s;
+}
+#i3 {
+    transform: translate(-50%, -50%) scale(0);
+    animation: revealImg2 4s forwards 2s, picAnimationRotate 2s forwards 6s, picAnimationMove 2s forwards 8s;
+}
+#i4 {
+    transform: translate(-50%, -50%) scale(0);
+    animation: revealImg1 14s forwards 2s;
+}
+
+
+#aboveimgs #btn1{
+    /* padding: 1px 6px; */
+    position: absolute;
+    left: 50%;
+    top:70%;
+    transform: translate(-50%,-50%);
+    font-size: 23px;
+    opacity: 0;
+    animation: arrowVisibility 2s forwards 16s;
+}
+
+#aboveimgs #btn2{
+    position: absolute;
+    left: 50%;
+    top:60%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    border: none !important;
+    padding: 5px 15px;
+    background-color: yellowgreen;
+    color: white;
+    border: 2px solid yellowgreen !important;
+    opacity: 0;
+    animation: arrowVisibility 2s forwards 16s;
+}
+#aboveimgs #btn2:hover {
+    background-color: white !important;
+    color: yellowgreen !important;
+    border: 2px solid yellowgreen !important;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#bottom h5{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 17px;
+    font-weight: 500;
+}
+#bottom #socials{
+    position: absolute;
+    bottom: 5%;
+    left: 85%;
+    font-size: 17px;
+    font-weight: 500;
+}
+#media{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#bottom #arrow {
+    position: fixed;
+    bottom: 5%;
+    left: 48.5%;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 5px 7px 0px 7px;
+    cursor: pointer;
+    opacity: 0; 
+    animation: arrowVisibility 2s forwards 17s, arrowAnimation 3s infinite ease-in-out;
+}
+@keyframes arrowVisibility {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes arrowAnimation {
+    0%,100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+#arrow:hover {
+    background-color: yellowgreen;
+    color: white;
+    animation-play-state: paused !important;
+    border: 2px solid yellowgreen !important;
+}
+#media i:hover{
+    color: yellowgreen;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#bottom #scroll {
+    position: fixed;
+    bottom: 14%;
+    left: 48.6%;
+    font-size: 20px;
+    font-weight: 550;
+    font-style: normal;
+    border-radius: 50px;
+    padding: 5px 7px 0px 7px;
+    cursor: pointer;
+    opacity: 0;
+    animation: arrowVisibility 2s forwards 17s;
+}
+#bottom #scroll:hover {
+    animation-play-state: paused !important;
+}
